@@ -48,32 +48,36 @@
 
                 <h2>services</h2>
 
-                <hr>
+                <div class="hr"></div>
 
-                <span>We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</span>
+                <div class="services-section-description">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
 
                 <div class="services">
 
                     <article class="services-service">
                         <div class="service-icon">A</div>
                         <h3>Clean Typography</h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+                        <div class="service-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+                        </div>
                     </article>
 
                     <article class="services-service">
                         <div class="service-icon"><i class="fas fa-code"></i></div>
                         <h3>Rock Solid Code</h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
-                    </article>
+                        <div class="service-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+                        </div>                    </article>
 
                     <article class="services-service">
                         <div class="service-icon"><i class="far fa-life-ring"></i></div>
                         <h3>Expert Support</h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
-                    </article>
+                        <div class="service-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+                        </div>                    </article>
 
                 </div>
 
@@ -83,7 +87,7 @@
 
                 <h2>about us</h2>
 
-                <hr>
+                <div class="hr"></div>
 
                 <div class="about-us-description">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
@@ -174,7 +178,7 @@
 
                 <h2>latest works</h2>
                 
-                <hr>
+                <div class="hr"></div>
 
                 <div class="latest-works-tags">
                     <nav>
@@ -262,7 +266,7 @@
 
                 <h2>recent blog posts</h2>
 
-                <hr>
+                <div class="hr"></div>
 
                 <div class="blog-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</div>
 
@@ -349,16 +353,16 @@
 
                 <h2>get in touch</h2>
 
-                <hr>
+                <div class="hr"></div>
 
-                <div class="contacts-text">
+                <div class="contacts-description">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
                 </div>
 
                 <aside class="contacts">
                     <div class="contact address">
                         <h4>Address</h4>
-                        <address>312, 7th Ave, New York NY 101200, United States of America</address>
+                        <address>312, 7th Ave, New York NY<br>101200, United States of America</address>
                     </div>
                     <div class="contact phone">
                         <h4>Hotline (24x7)</h4>
@@ -370,18 +374,17 @@
                     </div>
                 </aside>
 
-                <form action="" class="form"> <!--grid---->
-                    <input type="text" name="name" id="">
-                    <input type="email" name="email" id="">
-                    <input type="text" name="subject" id="">
-                    <input type="text" name="company" id="">
-                    <textarea name="message" id="" cols="30" rows="10">
-                        write you message
-                    </textarea>
+                <form action="" class="form">
+                    <input type="text" name="name" id="name" placeholder="your name">
+                    <input type="email" name="email" id="email" placeholder="your email">
+                    <input type="text" name="subject" id="subject" placeholder="your subject">
+                    <input type="text" name="company" id="company" placeholder="company name">
+                    <textarea name="message" id="" cols="30" rows="10">write your message</textarea>
+                    <div class="form-bottom">
+                        <input type="button" value="send message" form="form">
+                        <span><span class="red">*</span> We’ll contact you as as possible. We don’t reply on Monday.</span>
+                    </div>
                 </form>
-
-                <input type="button" value="send message" form="form">
-                <span><span class="red">*</span> We’ll contact you as as possible. We don’t reply on Monday.</span> 
 
             </section>
 
@@ -393,12 +396,12 @@
     <footer>
         <div class="wrapper">
             <div class="footer-soclal">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
             </div>
-            <hr>
+            <div class="hr"></div>
             <div class="footer-copyright">© 2015 Startup, Designed by ShapedTheme</div>
         </div>
     </footer>
