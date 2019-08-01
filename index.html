@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -44,7 +46,7 @@
 
         <div class="wrapper">
 
-            <section id="services-section">
+           <section id="services-section">
 
                 <h2>services</h2>
 
@@ -54,30 +56,38 @@
 
                 <div class="services">
 
-                    <article class="services-service">
-                        <div class="service-icon">A</div>
-                        <h3>Clean Typography</h3>
-                        <div class="service-description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
-                        </div>
+                    <a href="#">
+                        <article class="services-service">
+                            <div class="service-icon">A</div>
+                            <h3>Clean Typography</h3>
+                            <div class="service-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="#">
+                        <article class="services-service">
+                            <div class="service-icon"><i class="fas fa-code"></i></div>
+                            <h3>Rock Solid Code</h3>
+                            <div class="service-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+                            </div>                    
                     </article>
+                    </a>
 
-                    <article class="services-service">
-                        <div class="service-icon"><i class="fas fa-code"></i></div>
-                        <h3>Rock Solid Code</h3>
-                        <div class="service-description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
-                        </div>                    </article>
-
-                    <article class="services-service">
-                        <div class="service-icon"><i class="far fa-life-ring"></i></div>
-                        <h3>Expert Support</h3>
-                        <div class="service-description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
-                        </div>                    </article>
+                    <a href="#">
+                        <article class="services-service">
+                            <div class="service-icon"><i class="far fa-life-ring"></i></div>
+                            <h3>Expert Support</h3>
+                            <div class="service-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+                            </div>                    
+                        </article>
+                    </a>
 
                 </div>
 
@@ -192,9 +202,9 @@
                     </nav>
                 </div>
 
-                <div class="latest-works-container"> <!--grid-->
+                <div class="latest-works-container">
 
-                    <div class="latest-works-item item1"> <!--  через hover.effect => visibility: hidden;-->
+                    <div class="latest-works-item item1"> 
                         <div class="description">hair dresser</div>
                         <div class="tag">branding</div>
                         <a href="#" class="button view">view <i class="fas fa-angle-right"></i></a>
@@ -251,7 +261,7 @@
 
                 </div>
 
-            </section>
+            </section> 
         </div>
 
         <section id="paralax">
@@ -334,18 +344,35 @@
                     <img src="img/main/clients/client-logo-3.png" alt="client-logo" class="client-logo">
                     <img src="img/main/clients/client-logo-4.png" alt="client-logo" class="client-logo">
                     <img src="img/main/clients/client-logo-5.png" alt="client-logo" class="client-logo">
-                </div>
-
+                </div><!---->
+                
                 <div class="clients-description">
-                    <div class="clients-description-text">    
-                        Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
-                        Temporibus autem quibusdam et aut officiis debitis aut rerum
+
+                    <div class="description-1">
+                        <div class="clients-description-text">    
+                            Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+                            Temporibus autem quibusdam et aut officiis debitis aut rerum
+                        </div>                    
+                        <span class="clients-description-author">John Doe, Google Inc.</span>
                     </div>
+                    <div class="description-2">
+                        <div class="clients-description-text">
+                            Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                            Temporibus autem quibusdam et aut officiis debitis aut rerum
+                        </div>
+                        <span class="clients-description-author">John Doe, Google Inc.</span>
+                    </div>
+                    <div class="description-3">
+                        <div class="clients-description-text">
+                            Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                            Temporibus autem quibusdam et aut officiis debitis aut rerum
+                        </div>
+                        <span class="clients-description-author">John Doe, Google Inc.</span>
+                    </div>
+
                     
-                    <span class="clients-description-author">John Doe, Google Inc.</span>
                 </div>
 
-                <div class="indicator"></div>
 
             </section>
 
@@ -355,36 +382,40 @@
 
                 <div class="hr"></div>
 
-                <div class="contacts-description">
+                <div class="contact-description">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
                 </div>
 
-                <aside class="contacts">
-                    <div class="contact address">
-                        <h4>Address</h4>
-                        <address>312, 7th Ave, New York NY<br>101200, United States of America</address>
-                    </div>
-                    <div class="contact phone">
-                        <h4>Hotline (24x7)</h4>
-                        <div class="contact-phones">+65 0052 300, +65 88251 210<br>+88 01723 511 340</div>
-                    </div>
-                    <div class="contact email">
-                        <h4>E-mail</h4>
-                        <div class="contact-emails">shapedtheme@gmail.com<br>khalilkode@gmail.com</div>
-                    </div>
-                </aside>
+                <div class="contact-container">
+                   <aside class="contacts">
+                        <div class="contact address">
+                            <h4>Address</h4>
+                            <address>312, 7th Ave, New York NY<br>101200, United States of America</address>
+                        </div>
+                        <div class="contact phone">
+                            <h4>Hotline (24x7)</h4>
+                            <div class="contact-phones">+65 0052 300, +65 88251 210<br>+88 01723 511 340</div>
+                        </div>
+                        <div class="contact email">
+                            <h4>E-mail</h4>
+                            <div class="contact-emails">shapedtheme@gmail.com<br>khalilkode@gmail.com</div>
+                        </div>
+                    </aside>
 
-                <form action="" class="form">
-                    <input type="text" name="name" id="name" placeholder="your name">
-                    <input type="email" name="email" id="email" placeholder="your email">
-                    <input type="text" name="subject" id="subject" placeholder="your subject">
-                    <input type="text" name="company" id="company" placeholder="company name">
-                    <textarea name="message" id="" cols="30" rows="10">write your message</textarea>
-                    <div class="form-bottom">
-                        <input type="button" value="send message" form="form">
-                        <span><span class="red">*</span> We’ll contact you as as possible. We don’t reply on Monday.</span>
-                    </div>
-                </form>
+                    <form action="" class="form">
+                        <input type="text" name="name" id="name" placeholder="your name">
+                        <input type="email" name="email" id="email" placeholder="your email">
+                        <input type="text" name="subject" id="subject" placeholder="your subject">
+                        <input type="text" name="company" id="company" placeholder="company name">
+                        <textarea name="message" id="" cols="30" rows="10">write your message</textarea>
+                        <div class="form-bottom">
+                            <input type="button" value="send message" form="form">
+                            <span><span class="red">*</span> We’ll contact you as as possible. We don’t reply on Monday.</span>
+                        </div>
+                    </form> 
+                </div>
+
+                
 
             </section>
 
@@ -406,5 +437,8 @@
         </div>
     </footer>
     
+    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
