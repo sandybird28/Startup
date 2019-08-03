@@ -27,6 +27,8 @@ header{
                 text-transform: capitalize;
                 font-weight: bold;
                 font-size: 24px;
+                animation-delay: 5s;
+                animation-duration: 3s;
             }      
             nav ul{
                 display: flex;
@@ -105,6 +107,8 @@ h2{
                 flex-basis: 350px;
                 font-size: 14px;
                 margin: 0 8px;
+                visibility: hidden;
+                
                 .service-icon{
                     margin: 70px auto 0;
                     width: 86px;
@@ -114,6 +118,8 @@ h2{
                     color: #c0301c;
                     font-size: 48px;
                     line-height:  87px;
+                    transition: .6s ease-out;
+
 
                 }
                 .service-description{
@@ -138,6 +144,8 @@ h2{
             .service:hover .service-icon{
                 background-color: #c0301c;
                 color: #ffffff;
+                border: 1px solid #c0301c;
+
             } 
         
     }
@@ -163,19 +171,20 @@ h2{
         margin-top: 66px;
         .profile{
             margin: 0 14px;
+
             .profile-photo{
                 height: 250px;
                 max-width: 263px;
                 margin: 0 auto;
+                transition: .6s ease-out;
 
 
                 .social-bar{
                     padding-top: 190px;
                     display: flex;
                     justify-content: center;
-                    visibility: hidden;
                     a.social-logo{
-                        color: #fff;
+                        color: transparent;
                         text-decoration: none;
                         display: block;
                         width: 28px;
@@ -213,9 +222,26 @@ h2{
         .profile:hover{
             
             .profile-photo{
-                box-shadow: inset 0 0 0 132px rgba(55, 55, 55, 0.3);
+                box-shadow: inset 0 0 150px 132px rgba(55, 55, 55, 0.3);
                 .social-bar{
-                    visibility: visible;
+                    a{
+                       color: #fff; 
+                        .fa-facebook-f{
+                            transition:  1s ease-out ;
+
+                        }
+                        .fa-twitter{
+                            transition:  1s ease-out .5s;
+                        }
+                        .fa-google-plus-g{
+                            transition:  1s ease-out 1s;
+                        }
+                        .fa-linkedin-in{
+                            transition:  1s ease-out 1.5s;
+                            
+                        }
+                    }
+
                     a.social-logo:hover{
                         background-color: #c0301c;
     
@@ -262,6 +288,7 @@ h2{
                 transition: 1s ease-out;
 
                 *{
+                    transition-delay: .3s;
                     visibility: hidden;
                 }
 
@@ -287,9 +314,9 @@ h2{
 
             .latest-works-item:hover{
                 box-shadow: inset 0px 0px 150px 200px rgba(192, 48, 28, 0.5);
-                transition: 1s ease-out;
+                
                 *{
-                    transition-delay: .2s;
+                    //transition-delay: .2s;
                     visibility: visible;
                 }
             }
@@ -355,6 +382,7 @@ h2{
             padding: 0 25px;
             margin: 0 auto;
             border: 2px solid #fff;
+            transition: .6s ease-out;
             }
         a.button:hover{
             color: #c0301c;
@@ -564,12 +592,11 @@ h2{
                 }
             display: grid;
             grid-template: 44px 44px 104px / minmax(auto,350px) minmax(auto,350px);
-            //grid-template-columns: 350px 350px;
-            //grid-template-rows: 44px 44px 104px;
             grid-column-gap: 30px;
             grid-row-gap: 21px;
         input{
-                @include form-input-style;            
+                @include form-input-style;
+                transition: .6s ease-out;
         }
         textarea{
                 border:1px solid #777777;
@@ -721,13 +748,14 @@ footer{
     .latest-works-container{
         justify-content:center ;
     }
-
-
-
     #paralax{
         .wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             .paralax-text{
                 font-size: 20px;
+                padding:0 0 40px;
             }
         }
     }
@@ -736,6 +764,9 @@ footer{
             flex-direction: column;
             .right-blog-item{
                 padding: 10px;
+            }
+            img.left-blog-item{
+                width: 100%;
             }
         }
     }

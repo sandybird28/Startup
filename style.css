@@ -33,6 +33,10 @@ header .wrapper .header-top-bar .logo {
   text-transform: capitalize;
   font-weight: bold;
   font-size: 24px;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 header .wrapper .header-top-bar nav ul {
@@ -129,6 +133,7 @@ h2 {
       flex-basis: 350px;
   font-size: 14px;
   margin: 0 8px;
+  visibility: hidden;
 }
 
 #services-section .services a .service .service-icon {
@@ -140,6 +145,8 @@ h2 {
   color: #c0301c;
   font-size: 48px;
   line-height: 87px;
+  -webkit-transition: .6s ease-out;
+  transition: .6s ease-out;
 }
 
 #services-section .services a .service .service-description {
@@ -164,6 +171,7 @@ h2 {
 #services-section .services .service:hover .service-icon {
   background-color: #c0301c;
   color: #ffffff;
+  border: 1px solid #c0301c;
 }
 
 #about-us-section {
@@ -203,6 +211,8 @@ h2 {
   height: 250px;
   max-width: 263px;
   margin: 0 auto;
+  -webkit-transition: .6s ease-out;
+  transition: .6s ease-out;
 }
 
 #about-us-section .about-us-slider .profile .profile-photo .social-bar {
@@ -213,11 +223,10 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  visibility: hidden;
 }
 
 #about-us-section .about-us-slider .profile .profile-photo .social-bar a.social-logo {
-  color: #fff;
+  color: transparent;
   text-decoration: none;
   display: block;
   width: 28px;
@@ -257,12 +266,32 @@ h2 {
 }
 
 #about-us-section .about-us-slider .profile:hover .profile-photo {
-  -webkit-box-shadow: inset 0 0 0 132px rgba(55, 55, 55, 0.3);
-          box-shadow: inset 0 0 0 132px rgba(55, 55, 55, 0.3);
+  -webkit-box-shadow: inset 0 0 150px 132px rgba(55, 55, 55, 0.3);
+          box-shadow: inset 0 0 150px 132px rgba(55, 55, 55, 0.3);
 }
 
-#about-us-section .about-us-slider .profile:hover .profile-photo .social-bar {
-  visibility: visible;
+#about-us-section .about-us-slider .profile:hover .profile-photo .social-bar a {
+  color: #fff;
+}
+
+#about-us-section .about-us-slider .profile:hover .profile-photo .social-bar a .fa-facebook-f {
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+}
+
+#about-us-section .about-us-slider .profile:hover .profile-photo .social-bar a .fa-twitter {
+  -webkit-transition: 1s ease-out .5s;
+  transition: 1s ease-out .5s;
+}
+
+#about-us-section .about-us-slider .profile:hover .profile-photo .social-bar a .fa-google-plus-g {
+  -webkit-transition: 1s ease-out 1s;
+  transition: 1s ease-out 1s;
+}
+
+#about-us-section .about-us-slider .profile:hover .profile-photo .social-bar a .fa-linkedin-in {
+  -webkit-transition: 1s ease-out 1.5s;
+  transition: 1s ease-out 1.5s;
 }
 
 #about-us-section .about-us-slider .profile:hover .profile-photo .social-bar a.social-logo:hover {
@@ -320,6 +349,8 @@ h2 {
 }
 
 #latest-works-section .latest-works-container .latest-works-item * {
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
   visibility: hidden;
 }
 
@@ -347,13 +378,9 @@ h2 {
 #latest-works-section .latest-works-container .latest-works-item:hover {
   -webkit-box-shadow: inset 0px 0px 150px 200px rgba(192, 48, 28, 0.5);
           box-shadow: inset 0px 0px 150px 200px rgba(192, 48, 28, 0.5);
-  -webkit-transition: 1s ease-out;
-  transition: 1s ease-out;
 }
 
 #latest-works-section .latest-works-container .latest-works-item:hover * {
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s;
   visibility: visible;
 }
 
@@ -424,6 +451,8 @@ h2 {
   padding: 0 25px;
   margin: 0 auto;
   border: 2px solid #fff;
+  -webkit-transition: .6s ease-out;
+  transition: .6s ease-out;
 }
 
 #paralax .wrapper a.button:hover {
@@ -672,6 +701,8 @@ h2 {
   text-transform: uppercase;
   text-align: left;
   padding-left: 17px;
+  -webkit-transition: .6s ease-out;
+  transition: .6s ease-out;
 }
 
 #contact .contact-container form.form textarea {
@@ -858,8 +889,21 @@ footer .wrapper .footer-copyright {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  #paralax .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   #paralax .wrapper .paralax-text {
     font-size: 20px;
+    padding: 0 0 40px;
   }
   #blog .blog-item {
     -webkit-box-orient: vertical;
@@ -869,6 +913,9 @@ footer .wrapper .footer-copyright {
   }
   #blog .blog-item .right-blog-item {
     padding: 10px;
+  }
+  #blog .blog-item img.left-blog-item {
+    width: 100%;
   }
   #contact .contact-container {
     -webkit-box-orient: vertical;

@@ -1,5 +1,15 @@
 'use strict';
 
+
+function slowScroll(id) { 
+    let offset = 0;
+    $('html, body').animate({ 
+         scrollTop: $(id).offset().top - offset 
+    }, 800);
+    return false; 
+} 
+
+
 $('.about-us-slider').slick({
     infinite: true,
     slidesToShow: 4,
@@ -55,3 +65,29 @@ $('.clients-description').slick({
     dots: true,
     arrows: false,
 });    
+
+$('a.start').hover(function(){
+    $(this).removeClass('fadeInUpBig');
+    $(this).addClass('tada');
+    });
+   
+$('a.start').mouseleave(function(){
+    $(this).removeClass('tada');
+    });
+
+
+
+let windowHeight = $(window).height();
+ 
+$(document).on('scroll', function() {
+    $('.service').each(function() {
+        let self = $(this),
+        height = self.offset().top + self.height();
+        if ($(document).scrollTop() + windowHeight >= height) {
+            $('.service').css('visibility', 'visible');
+            $('a .left').addClass('animated fadeInRight');
+            $('a .center').addClass('animated fadeInUp');
+            $('a .right').addClass('animated fadeInLeft')
+        }
+    });
+});

@@ -18,16 +18,16 @@
         <div class="wrapper">
 
             <div class="header-top-bar">
-                <div class="logo">startup</div>
+                <div class="logo animated flip">startup</div>
                 <nav>
                     <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#services-section">services</a></li>
-                        <li><a href="#about-us-section">about</a></li>
-                        <li><a href="#latest-works-section">works</a></li>
-                        <li><a href="#blog">blog</a></li>
-                        <li><a href="#clients">clients</a></li>
-                        <li><a href="#contact">contact</a></li>
+                        <li><a href="#"  >home</a></li>
+                        <li><a href="#services-section" onclick="slowScroll('#services-section')">services</a></li>
+                        <li><a href="#about-us-section" onclick="slowScroll('#about-us-section')">about</a></li>
+                        <li><a href="#latest-works-section" onclick="slowScroll('#latest-works-section')">works</a></li>
+                        <li><a href="#blog" onclick="slowScroll('#blog')">blog</a></li>
+                        <li><a href="#clients" onclick="slowScroll('#clients')">clients</a></li>
+                        <li><a href="#contact" onclick="slowScroll('#contact')">contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -36,7 +36,7 @@
                 <h1 class="animated fadeInLeftBig">welcome to startup</h1>
                 <span class="animated fadeInRightBig">your favourite creative agency template</span>
                 <br>
-                <a href="#" class="button start animated fadeInUpBig">get started</a>
+                <a href="#" class="button start animated fadeInUpBig" onclick="slowScroll('#services-section')">get started</a>
             </div>
 
         </div> 
@@ -58,7 +58,7 @@
                 <div class="services">
 
                     <a href="#">
-                        <article class="service animated fadeInRight">
+                        <article class="service left">
                             <div class="service-icon">A</div>
                             <h3>Clean Typography</h3>
                             <div class="service-description">
@@ -69,7 +69,7 @@
                     </a>
 
                     <a href="#">
-                        <article class="service animated fadeInUp">
+                        <article class="service center">
                             <div class="service-icon"><i class="fas fa-code"></i></div>
                             <h3>Rock Solid Code</h3>
                             <div class="service-description">
@@ -80,7 +80,7 @@
                     </a>
 
                     <a href="#">
-                        <article class="service animated fadeInLeft">
+                        <article class="service right">
                             <div class="service-icon"><i class="far fa-life-ring"></i></div>
                             <h3>Expert Support</h3>
                             <div class="service-description">
@@ -316,7 +316,7 @@
         <section id="paralax">
             <div class="wrapper">
                 <div class="paralax-text">Do you like OUR WORK so far?<br>Let's talk about YOUR PROJECT!</div>
-                <a href="#contact" class="button get-in-touch">get in touch</a>
+                <a href="#contact" class="button get-in-touch" onclick="slowScroll('#contact')">get in touch</a>
             </div>
         </section>
 
@@ -486,7 +486,7 @@
         </div>
     </footer>
     
-    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="script.js"></script>
 </body>
