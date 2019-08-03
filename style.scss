@@ -55,6 +55,7 @@ header{
                 margin: 0 0 20px;
             }
             span{
+                display: block;
                 font-family: 'Roboto Slab', serif;
                 font-size: 20px;
                 font-weight: 300;
@@ -100,7 +101,7 @@ h2{
             text-decoration: none;
             color: inherit;
     
-            .services-service{
+            .service{
                 flex-basis: 350px;
                 font-size: 14px;
                 margin: 0 8px;
@@ -128,13 +129,13 @@ h2{
                 }        
             }
         }    
-            a:first-child .services-service .service-icon{
+            a:first-child .service .service-icon{
                 font-family: 'Times New Roman', Times, serif;
                 font-weight: bold;
                 font-size: 52px;
                 line-height: 80px;
             }
-            .services-service:hover .service-icon{
+            .service:hover .service-icon{
                 background-color: #c0301c;
                 color: #ffffff;
             } 
@@ -454,6 +455,10 @@ h2{
     justify-content: center;
     .clients-logos-bar{
         margin-top: 158px;
+        .slick-track{
+            display: flex;
+            align-items: center;
+        }
         .client-logo{
             margin: 0 33px;
         }
@@ -675,7 +680,8 @@ footer{
 
 @media screen and (max-width: 430px){
     header{
-        height: 455px;
+        height: auto;
+        padding-bottom: 30px;
         .wrapper{
             .header-top-bar{
                 flex-direction: column;

@@ -72,6 +72,7 @@ header .wrapper .header-welcome h1 {
 }
 
 header .wrapper .header-welcome span {
+  display: block;
   font-family: 'Roboto Slab', serif;
   font-size: 20px;
   font-weight: 300;
@@ -123,14 +124,14 @@ h2 {
   color: inherit;
 }
 
-#services-section .services a .services-service {
+#services-section .services a .service {
   -ms-flex-preferred-size: 350px;
       flex-basis: 350px;
   font-size: 14px;
   margin: 0 8px;
 }
 
-#services-section .services a .services-service .service-icon {
+#services-section .services a .service .service-icon {
   margin: 70px auto 0;
   width: 86px;
   height: 86px;
@@ -141,11 +142,11 @@ h2 {
   line-height: 87px;
 }
 
-#services-section .services a .services-service .service-description {
+#services-section .services a .service .service-description {
   line-height: 25px;
 }
 
-#services-section .services a .services-service h3 {
+#services-section .services a .service h3 {
   margin-top: 30px;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
@@ -153,14 +154,14 @@ h2 {
   font-weight: 600;
 }
 
-#services-section .services a:first-child .services-service .service-icon {
+#services-section .services a:first-child .service .service-icon {
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   font-size: 52px;
   line-height: 80px;
 }
 
-#services-section .services .services-service:hover .service-icon {
+#services-section .services .service:hover .service-icon {
   background-color: #c0301c;
   color: #ffffff;
 }
@@ -543,6 +544,15 @@ h2 {
   margin-top: 158px;
 }
 
+#clients .clients-logos-bar .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #clients .clients-logos-bar .client-logo {
   margin: 0 33px;
 }
@@ -798,7 +808,8 @@ footer .wrapper .footer-copyright {
 
 @media screen and (max-width: 430px) {
   header {
-    height: 455px;
+    height: auto;
+    padding-bottom: 30px;
   }
   header .wrapper .header-top-bar {
     -webkit-box-orient: vertical;
