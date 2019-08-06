@@ -75,6 +75,9 @@ $('a.start').mouseleave(function(){
     $(this).removeClass('tada');
     });
 
+$('.menu__icon').on('click', function() {
+    $(this).closest('.menu').toggleClass('menu_state_open');
+    });
 
 
 let windowHeight = $(window).height();
