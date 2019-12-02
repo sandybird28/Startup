@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,21 +17,21 @@
             <div class="header-top-bar">
                 <div class="logo animated flip">startup</div>
                 <nav class="menu">
-                    <ul class="menu__links">
+                    <div class="menu__links">
                         <div class="menu__icon">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </div>
-                        <li  class="menu__links-item"><a href="#"  >home</a></li>
-                        <li  class="menu__links-item"><a href="#services-section" onclick="slowScroll('#services-section')">services</a></li>
-                        <li  class="menu__links-item"><a href="#about-us-section" onclick="slowScroll('#about-us-section')">about</a></li>
-                        <li  class="menu__links-item"><a href="#latest-works-section" onclick="slowScroll('#latest-works-section')">works</a></li>
-                        <li  class="menu__links-item"><a href="#blog" onclick="slowScroll('#blog')">blog</a></li>
-                        <li  class="menu__links-item"><a href="#clients" onclick="slowScroll('#clients')">clients</a></li>
-                        <li  class="menu__links-item"><a href="#contact" onclick="slowScroll('#contact')">contact</a></li>
-                    </ul>
+                        <div  class="menu__links-item" id="to-home">home</div>
+                        <div  class="menu__links-item" id="to-services">services</div>
+                        <div  class="menu__links-item" id="to-about">about</div>
+                        <div  class="menu__links-item" id="to-works">works</div>
+                        <div  class="menu__links-item" id="to-blog">blog</div>
+                        <div  class="menu__links-item" id="to-clients">clients</div>
+                        <div  class="menu__links-item" id="to-contact">contact</div>
+                    </div>
                 </nav>
             </div>
 
@@ -63,7 +60,7 @@
 
                 <div class="services">
 
-                    <a href="#">
+                    <div>
                         <article class="service left">
                             <div class="service-icon">A</div>
                             <h3>Clean Typography</h3>
@@ -72,9 +69,9 @@
                                 Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
                             </div>
                         </article>
-                    </a>
+                    </div>
 
-                    <a href="#">
+                    <div>
                         <article class="service center">
                             <div class="service-icon"><i class="fas fa-code"></i></div>
                             <h3>Rock Solid Code</h3>
@@ -82,10 +79,10 @@
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                                 Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
                             </div>                    
-                    </article>
-                    </a>
+                        </article>
+                    </div>
 
-                    <a href="#">
+                    <div>
                         <article class="service right">
                             <div class="service-icon"><i class="far fa-life-ring"></i></div>
                             <h3>Expert Support</h3>
@@ -94,7 +91,7 @@
                                 Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
                             </div>                    
                         </article>
-                    </a>
+                    </div>
 
                 </div>
 
@@ -182,58 +179,6 @@
                         <div class="profile-name">John Doe</div>
                         <div class="profile-profession">Front-end Developer</div>
                     </article>
-
-                    <article class="profile"> 
-                        <div class="profile-photo photo1">
-                            <div class="social-bar">
-                                <a href="" class="social-logo"><i class="fab fa-facebook-f"></i></a>
-                                <a href="" class="social-logo"><i class="fab fa-twitter"></i></a>
-                                <a href="" class="social-logo"><i class="fab fa-google-plus-g"></i></a>
-                                <a href="" class="social-logo"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="profile-name">Md. Khalil Uddin</div>
-                        <div class="profile-profession">Head of Ideas</div>
-                    </article>
-
-                    <article class="profile">
-                        <div class="profile-photo photo2">
-                            <div class="social-bar">
-                                <a href="" class="social-logo"><i class="fab fa-facebook-f"></i></a>
-                                <a href="" class="social-logo"><i class="fab fa-twitter"></i></a>
-                                <a href="" class="social-logo"><i class="fab fa-google-plus-g"></i></a>
-                                <a href="" class="social-logo"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="profile-name">Rubel Miah</div>
-                        <div class="profile-profession">Lead WordPress Developer</div>
-                    </article>
-
-                    <article class="profile">
-                        <div class="profile-photo photo3">
-                            <div class="social-bar">
-                                <a href="" class="social-logo"><i class="fab fa-facebook-f"></i></a>
-                                <a href="" class="social-logo"><i class="fab fa-twitter"></i></a>
-                                <a href="" class="social-logo"><i class="fab fa-google-plus-g"></i></a>
-                                <a href="" class="social-logo"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="profile-name">Shamim Mia</div>
-                        <div class="profile-profession">Sr. Web Developer</div>
-                    </article>
-
-                    <article class="profile">
-                        <div class="profile-photo photo4">
-                            <div class="social-bar">
-                                <a href="" class="social-logo"><i class="fab fa-facebook-f"></i></a>
-                                <a href="" class="social-logo"><i class="fab fa-twitter"></i></a>
-                                <a href="" class="social-logo"><i class="fab fa-google-plus-g"></i></a>
-                                <a href="" class="social-logo"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="profile-name">John Doe</div>
-                        <div class="profile-profession">Front-end Developer</div>
-                    </article>                
                 
                 </div>
 
@@ -491,9 +436,7 @@
             <div class="footer-copyright">© 2015 Startup, Designed by ShapedTheme</div>
         </div>
     </footer>
-    
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <div class="to-top">TOP</div>
     <script src="script.js"></script>
 </body>
 </html>
